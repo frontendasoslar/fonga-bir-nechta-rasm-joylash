@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+/* Meros qilib olish */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-color: #fff;
+  color: #000;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*:focus {
+  outline: 2px dotted var(--outline-color);
+  outline-offset: 3px;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.box {
+  height: 800px;
+  background-color: aqua;
+  background-image:
+  /* Fonga bir nechta rasm joylash uchun eng еtepada turadigan rasm birinchi joylanadi, undan keyin keyingisi ya'ni quyidagicha */
+   url("https://picsum.photos/300?random=1"),
+   /* Birinchi rasm */
+   url("https://picsum.photos/600?random=2"),
+   /* Ikkinchi rasm */
+   url("https://picsum.photos/700?random=3");
+   /* Uchinchi rasm */
+
+   /* Ularning stillari ham huddi shu tariqa yani birinchi birinchi rasmni stili undan keyin keyingisiniki */
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  /* Birinchirasm stili, ikkinchirasm stili, uchinchi rasm stili */
+  background-position: center center, bottom left, right top;
+  /* Birinchirasm stili, ikkinchirasm stili, uchinchi rasm stili */
+}
